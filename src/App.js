@@ -61,7 +61,13 @@ function Menu() {
 }
 
 function Home() {
-  return  <Menu />;
+  return (
+    <>
+      <Menu />
+      <p>누리넷 설치 및 다운로드 센터에 오신것을 환영합니다.</p>
+      <p>구독주소 URL을 받으신 후 설치를 진행하시기 바랍니다.</p>
+    </>
+  );
 }
 
 function Android() {
