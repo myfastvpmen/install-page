@@ -61,7 +61,7 @@ function Menu() {
 }
 
 function Home() {
-  return <>NO PAGE FOUND</>;
+  return  <Menu />;
 }
 
 function Android() {
