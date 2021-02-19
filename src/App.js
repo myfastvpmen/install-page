@@ -64,7 +64,7 @@ function Home() {
   return (
     <>
       <Menu />
-      <p>누리넷 설치 및 다운로드 센터에 오신것을 환영합니다.(update:2/19)</p>
+      <p>누리넷 설치 및 다운로드 센터에 오신것을 환영합니다.(update:2/19-2)</p>
       <p>구독주소 URL을 받으신 후 설치를 진행하시기 바랍니다.</p>
       <p>
         설치메뉴얼에 보시면 구독주소로 서버 업데이트 하는법 포함되어
@@ -178,7 +178,7 @@ function Macosx() {
         className='App-link'
         href='http://download.vmess.red/files/V2rayU0old.dmg'
         target='_blank'
-        rel='noopener noreferrer'
+        rel='external noreferrer'
       >
         3. 맥북/아이맥용 프로그램 다운로드
       </a>
