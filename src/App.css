@@ -12,6 +12,18 @@
   pointer-events: none;
 }
 
+.Box {
+  padding: 2em;
+  background-color: #222327;
+  width: 80vmin;
+  height: 60vmin;
+  overflow: scroll;
+  font-size: 10px;
+  align-items: left;
+  justify-content: left;
+  text-align: left;
+}
+
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;

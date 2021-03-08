@@ -4,6 +4,7 @@ import andpdf from './asset/android-kor.pdf';
 import iospdf from './asset/ios-kor.pdf';
 import winpdf from './asset/windows-kor.pdf';
 import macpdf from './asset/macosx-kor.pdf';
+import Agreement from './Agreement';
 import './App.css';
 import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
 
@@ -26,8 +27,14 @@ function App() {
             <Route path='/macosxlink'>
               <Macosx />
             </Route>
-            <Route path='/'>
+            <Route path='/remote'>
+              <Remote />
+            </Route>
+            <Route path='/home'>
               <Home />
+            </Route>
+            <Route path='/'>
+              <Home2 />
             </Route>
           </Switch>
           <p> </p>
@@ -54,6 +61,9 @@ function Menu() {
           <li>
             <Link to='/macosxlink'>맥OS</Link>
           </li>
+          <li>
+            <Link to='/remote'>원격설치</Link>
+          </li>
         </ul>
       </nav>
     </>
@@ -64,13 +74,33 @@ function Home() {
   return (
     <>
       <Menu />
-      <p>누리넷 설치 및 다운로드 센터에 오신것을 환영합니다.(update:2/24v1)</p>
+      <p>누리넷 설치 및 다운로드 센터에 오신것을 환영합니다.</p>
       <p>구독주소 URL을 받으신 후 설치를 진행하시기 바랍니다.</p>
       <p>
-        설치메뉴얼에 보시면 구독주소로 서버 업데이트 하는법 포함되어
-        나옵니다. <br />
+        설치메뉴얼에 보시면 구독주소로 서버 업데이트 하는법 포함되어 나옵니다.{' '}
+        <br />
         일주일에 한번정도 업데이트하시면 더욱 원활하게 이용하실수 있습니다.
       </p>
+      <p>마지막 업데이트 : 2021년 2월 24일</p>
+    </>
+  );
+}
+
+function Home2() {
+  return (
+    <>
+      <div className='Box'>
+        <Agreement />
+      </div>
+
+      <p>이용약관에 동의하며 설치를 진행합니다.</p>
+      <nav>
+        <ul>
+          <li>
+            <Link to='/home'>동의</Link>
+          </li>
+        </ul>
+      </nav>
     </>
   );
 }
@@ -183,6 +213,35 @@ function Macosx() {
         3. 맥북/아이맥용 프로그램 다운로드(우클릭 새탭에서 열기)
       </a>
       <p>일주일에 한번정도 서버목록을 업데이트해주세요! (설치법 5번 참조)</p>
+    </>
+  );
+}
+
+function Remote() {
+  return (
+    <>
+      <Menu />
+      <p>원격설치는 요금결제 이후 사전에 기술팀과 예약을 해야가능합니다.</p>
+
+      <p>TeamViewer QuickSupport 다운로드</p>
+      <a
+        className='App-link'
+        href="https://download.teamviewer.com/download/TeamViewerQS.dmg"
+        target='_blank'
+        rel='noopener noreferrer'
+      >
+        MAC버젼 TeamViewerQS.dmg (우클릭 새탭에서 열기)
+      </a>
+      <a
+        className='App-link'
+        href="https://download.teamviewer.com/download/TeamViewerQS.exe"
+        target='_blank'
+        rel='noopener noreferrer'
+      >
+        WINDOW버젼 TeamViewerQS.exe (우클릭 새탭에서 열기)
+      </a>
+      <p>즉석 원격 데스크톱 지원에 최적화된 작은 고객용 모듈은 설치나 관리자 권한이 필요하지 않습니다 <br /> 간단하게 다운로드 및 더블클릭하여 기술팀에게 제공된 ID와 비밀번호를 알려주세요.
+</p>
     </>
   );
 }
