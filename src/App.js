@@ -121,7 +121,7 @@ function Android() {
       <p>2. 구독주소(URL) 복사 준비</p>
       <a
         className='App-link'
-        href='http://download.vmess.red/files/v2rayNG-v1.5.11-arm64.apk'
+        href='http://usvip2.vmess.red/files/v2rayNG-v1.5.11-arm64.apk'
         target='_blank'
         rel='noopener noreferrer'
       >
@@ -179,7 +179,7 @@ function Windows() {
       <p>2. 구독주소(URL) 복사 준비</p>
       <a
         className='App-link'
-        href='http://download.vmess.red/files/Netch-check.zip'
+        href='http://usvip2.vmess.red/files/Netch-check.zip'
         target='_blank'
         rel='noopener noreferrer'
       >
@@ -206,7 +206,7 @@ function Macosx() {
       <p>2. 구독주소(URL) 복사 준비</p>
       <a
         className='App-link'
-        href='http://download.vmess.red/files/V2rayU0old.dmg'
+        href='http://usvip2.vmess.red/files/V2rayU0old.dmg'
         target='_blank'
         rel='noopener noreferrer'
       >
