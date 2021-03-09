@@ -50,7 +50,7 @@ ul {
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: #333;
+  background-color: rgb(26, 27, 46);
 }
 
 li {
@@ -67,7 +67,7 @@ li a {
 
 /* Change the link color to #111 (black) on hover */
 li a:hover {
-  background-color: #111;
+  background-color: rgb(61, 46, 61);
 }
 @keyframes App-logo-spin {
   from {

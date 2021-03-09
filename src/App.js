@@ -1,9 +1,13 @@
 import logo from './logo.svg';
 import sdrapp from './asset/sdrapp.jpeg';
-import andpdf from './asset/android-kor.pdf';
-import iospdf from './asset/ios-kor.pdf';
-import winpdf from './asset/windows-kor.pdf';
-import macpdf from './asset/macosx-kor.pdf';
+// import andpdf from './asset/android-kor.pdf';
+// import iospdf from './asset/ios-kor.pdf';
+// import winpdf from './asset/windows-kor.pdf';
+// import macpdf from './asset/macosx-kor.pdf';
+import andpng from './asset/noori-and-kor.png';
+import iospng from './asset/noori-ios-kor.png';
+import winpng from './asset/noori-win-kor.png';
+import macpng from './asset/noori-mac-kor.png';
 import Agreement from './Agreement';
 import './App.css';
 import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
@@ -110,22 +114,23 @@ function Android() {
     <>
       <Menu />
       <p></p>
-      <a
-        className='App-link'
-        href={andpdf}
-        target='_blank'
-        rel='noopener noreferrer'
-      >
-        1. 설치메뉴얼 PDF 먼저 읽어보기
-      </a>
-      <p>2. 구독주소(URL) 복사 준비</p>
+
       <a
         className='App-link'
         href='http://usvip2.vmess.red/files/v2rayNG-v1.5.11-arm64.apk'
         target='_blank'
         rel='noopener noreferrer'
       >
-        3. 안드로이드 앱 다운로드 및 설치
+        1. 안드로이드 앱 다운로드 및 설치
+      </a>
+      <p>2. 구독주소(URL) 복사 준비</p>
+      <a
+        className='App-link'
+        href={andpng}
+        target='_blank'
+        rel='noopener noreferrer'
+      >
+        3. 안드로이드 설치 메뉴얼 보기
       </a>
       <p>일주일에 한번정도 서버목록을 업데이트해주세요! (설치법 8번 참조)</p>
     </>
@@ -142,8 +147,7 @@ function Ios() {
       <p>
         네: 2번으로 이동
         <br />
-        아니요: 결제가능한 앱스토어 한국계정이 있습니까?(중국외 미국,홍콩등
-        가능)
+        아니요: 결제가능한 앱스토어 한국계정이 있습니까?(또는 미국,홍콩 등)
         <br />
         네: 한국계정에서 앱 구입 및 다운로드 후 2번으로 이동
         <br />
@@ -152,11 +156,11 @@ function Ios() {
       <p>2. 구독주소(URL) 복사 준비</p>
       <a
         className='App-link'
-        href={iospdf}
+        href={iospng}
         target='_blank'
         rel='noopener noreferrer'
       >
-        3. 설치메뉴얼 PDF 보고 설정하기
+        3. 아이폰 설치 메뉴얼 보기
       </a>
       <p>일주일에 한번정도 서버목록을 업데이트해주세요! (설치법 맨아래 참조)</p>
     </>
@@ -170,20 +174,20 @@ function Windows() {
       <p></p>
       <a
         className='App-link'
-        href={winpdf}
-        target='_blank'
-        rel='noopener noreferrer'
-      >
-        1. 설치메뉴얼 PDF 먼저 읽어보기
-      </a>
-      <p>2. 구독주소(URL) 복사 준비</p>
-      <a
-        className='App-link'
         href='http://usvip2.vmess.red/files/Netch-check.zip'
         target='_blank'
         rel='noopener noreferrer'
       >
-        3. 윈도우용 프로그램 다운로드 (우클릭 새탭에서 열기)
+        1. 윈도우용 프로그램 다운로드 (우클릭 새탭에서 열기)
+      </a>
+      <p>2. 구독주소(URL) 복사 준비</p>
+      <a
+        className='App-link'
+        href={winpng}
+        target='_blank'
+        rel='noopener noreferrer'
+      >
+        3. 윈도우 설치 메뉴얼 보기
       </a>
       <p>일주일에 한번정도 서버목록을 업데이트해주세요! (설치법 7번 참조)</p>
     </>
@@ -197,20 +201,20 @@ function Macosx() {
       <p></p>
       <a
         className='App-link'
-        href={macpdf}
-        target='_blank'
-        rel='noopener noreferrer'
-      >
-        1. 설치메뉴얼 PDF 먼저 읽어보기
-      </a>
-      <p>2. 구독주소(URL) 복사 준비</p>
-      <a
-        className='App-link'
         href='http://usvip2.vmess.red/files/V2rayU0old.dmg'
         target='_blank'
         rel='noopener noreferrer'
       >
-        3. 맥북/아이맥용 프로그램 다운로드(우클릭 새탭에서 열기)
+        1. 맥북/아이맥용 프로그램 다운로드(우클릭 새탭에서 열기)
+      </a>
+      <p>2. 구독주소(URL) 복사 준비</p>
+      <a
+        className='App-link'
+        href={macpng}
+        target='_blank'
+        rel='noopener noreferrer'
+      >
+        3. 설치메뉴얼 PDF 먼저 읽어보기
       </a>
       <p>일주일에 한번정도 서버목록을 업데이트해주세요! (설치법 5번 참조)</p>
     </>
@@ -226,7 +230,7 @@ function Remote() {
       <p>TeamViewer QuickSupport 다운로드</p>
       <a
         className='App-link'
-        href="https://download.teamviewer.com/download/TeamViewerQS.dmg"
+        href='https://download.teamviewer.com/download/TeamViewerQS.dmg'
         target='_blank'
         rel='noopener noreferrer'
       >
@@ -234,14 +238,17 @@ function Remote() {
       </a>
       <a
         className='App-link'
-        href="https://download.teamviewer.com/download/TeamViewerQS.exe"
+        href='https://download.teamviewer.com/download/TeamViewerQS.exe'
         target='_blank'
         rel='noopener noreferrer'
       >
         WINDOW버젼 TeamViewerQS.exe (우클릭 새탭에서 열기)
       </a>
-      <p>즉석 원격 데스크톱 지원에 최적화된 작은 고객용 모듈은 설치나 관리자 권한이 필요하지 않습니다 <br /> 간단하게 다운로드 및 더블클릭하여 기술팀에게 제공된 ID와 비밀번호를 알려주세요.
-</p>
+      <p>
+        즉석 원격 데스크톱 지원에 최적화된 작은 고객용 모듈은 설치나 관리자
+        권한이 필요하지 않습니다 <br /> 간단하게 다운로드 및 더블클릭하여
+        기술팀에게 제공된 ID와 비밀번호를 알려주세요.
+      </p>
     </>
   );
 }
