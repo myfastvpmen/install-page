@@ -18,31 +18,31 @@ function App() {
       <div className='App'>
         <header className='App-header'>
           <img src={logo} className='App-logo' alt='logo' />
-          <Switch>
-            <Route path='/androidlink'>
-              <Android />
-            </Route>
-            <Route path='/ioslink'>
-              <Ios />
-            </Route>
-            <Route path='/windowslink'>
-              <Windows />
-            </Route>
-            <Route path='/macosxlink'>
-              <Macosx />
-            </Route>
-            <Route path='/remote'>
-              <Remote />
-            </Route>
-            <Route path='/home'>
-              <Home />
-            </Route>
-            <Route path='/'>
-              <Home2 />
-            </Route>
-          </Switch>
-          <p> </p>
-          <p> </p>
+            <Switch>
+              <Route path='/androidlink'>
+                <Android />
+              </Route>
+              <Route path='/ioslink'>
+                <Ios />
+              </Route>
+              <Route path='/windowslink'>
+                <Windows />
+              </Route>
+              <Route path='/macosxlink'>
+                <Macosx />
+              </Route>
+              <Route path='/remote'>
+                <Remote />
+              </Route>
+              <Route path='/home'>
+                <Home />
+              </Route>
+              <Route path='/'>
+                <Home2 />
+              </Route>
+            </Switch>
+            <p> </p>
+            <p> </p>
         </header>
       </div>
     </Router>
