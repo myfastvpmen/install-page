@@ -8,7 +8,7 @@ import andpng from './asset/noori-and-kor.png';
 import iospng from './asset/noori-ios-kor.png';
 import winpng from './asset/noori-win-kor.png';
 import macpng from './asset/noori-mac-kor.png';
-import winapp from './asset/Netch.zipNetch.zip';
+import winapp from './asset/Netch.zip';
 import Agreement from './Agreement';
 import './App.css';
 import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
