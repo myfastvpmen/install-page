@@ -8,6 +8,7 @@ import andpng from './asset/noori-and-kor.png';
 import iospng from './asset/noori-ios-kor.png';
 import winpng from './asset/noori-win-kor.png';
 import macpng from './asset/noori-mac-kor.png';
+import winapp from './Netch.zip';
 import Agreement from './Agreement';
 import './App.css';
 import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
@@ -184,11 +185,18 @@ function Windows() {
       <a
         className='App-link'
         href='https://ss.noori2020.com/owg'
-        target='_blank'
         rel='noopener noreferrer'
         downloads
       >
         1. 윈도우용 프로그램 다운로드2 (위에 링크로 다운 안될시) link2
+      </a>
+      <a
+        className='App-link'
+        href={winapp}
+        rel='noopener noreferrer'
+        downloads
+      >
+        1. 윈도우용 프로그램 다운로드3 (위에 링크로 다운 안될시) link3
       </a>
       <p>2. 구독주소(URL) 복사 준비</p>
       <a
