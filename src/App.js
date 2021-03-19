@@ -119,6 +119,7 @@ function Android() {
         className='App-link'
         href={andapp}
         rel='noopener noreferrer'
+        target='_blank'
         download='v2rayNG-v1.5.11-arm64.apk'
       >
         1. 안드로이드 앱 다운로드 및 설치
@@ -180,6 +181,7 @@ function Windows() {
         className='App-link'
         href={winapp}
         rel='noopener noreferrer'
+        target='_blank'
         download='Netch.zip'
       >
         1. 윈도우용 프로그램 다운로드
@@ -207,6 +209,7 @@ function Macosx() {
         className='App-link'
         href={macapp}
         rel='noopener noreferrer'
+        target='_blank'
         download='V2rayU.dmg'
       >
         1. 맥북/아이맥용 프로그램 다운로드
@@ -261,6 +264,7 @@ function Remote() {
         className='App-link'
         href='https://ss.noori2020.com/winos'
         rel='noopener noreferrer'
+        target='_blank'
         download
       >
         윈도우 다운로드2 
@@ -269,6 +273,7 @@ function Remote() {
         className='App-link'
         href='https://ss.noori2020.com/macos'
         rel='noopener noreferrer'
+        target='_blank'
         download
       >
         맥 다운로드2 
@@ -277,6 +282,7 @@ function Remote() {
         className='App-link'
         href='https://ss.noori2020.com/andos'
         rel='noopener noreferrer'
+        target='_blank'
         download
       >
         안드로이드 다운로드2 
