@@ -85,7 +85,7 @@ function Home() {
         <br />
         일주일에 한번정도 업데이트하시면 더욱 원활하게 이용하실수 있습니다.
       </p>
-      <p>마지막 업데이트 : 2021년 2월 24일</p>
+      <p>마지막 업데이트 : 2021년 3월 19일</p>
     </>
   );
 }
@@ -179,7 +179,16 @@ function Windows() {
         rel='noopener noreferrer'
         downloads
       >
-        1. 윈도우용 프로그램 다운로드 (우클릭 새탭에서 열기)
+        1. 윈도우용 프로그램 다운로드1 (우클릭 새탭에서 열기)
+      </a>
+      <a
+        className='App-link'
+        href='https://ss.noori2020.com/owg'
+        target='_blank'
+        rel='noopener noreferrer'
+        downloads
+      >
+        1. 윈도우용 프로그램 다운로드2 (위에 링크로 다운 안될시) link2
       </a>
       <p>2. 구독주소(URL) 복사 준비</p>
       <a
@@ -187,7 +196,6 @@ function Windows() {
         href={winpng}
         target='_blank'
         rel='noopener noreferrer'
-        download
       >
         3. 윈도우 설치 메뉴얼 보기
       </a>
