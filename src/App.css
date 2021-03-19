@@ -3,8 +3,9 @@
 }
 
 .App-logo {
-  height: 10vmin;
+  height: 13vmin;
   pointer-events: none;
+  margin: 10px;
 }
 
 .App-img {
@@ -75,7 +76,7 @@ li a {
   text-align: center;
   padding: 6px 8px;
   text-decoration: none;
-  font-size: calc(10px + 2vmin);
+  font-size: calc(8px + 2vmin);
 }
 
 /* Change the link color to #111 (black) on hover */

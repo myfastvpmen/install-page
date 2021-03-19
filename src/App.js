@@ -1,14 +1,13 @@
-import logo from './logo.svg';
+import logo2 from './asset/noori-logo2.png';
 import sdrapp from './asset/sdrapp.jpeg';
-// import andpdf from './asset/android-kor.pdf';
-// import iospdf from './asset/ios-kor.pdf';
-// import winpdf from './asset/windows-kor.pdf';
-// import macpdf from './asset/macosx-kor.pdf';
+import fakeapp from './asset/fakeapp.png';
 import andpng from './asset/noori-and-kor.png';
 import iospng from './asset/noori-ios-kor.png';
 import winpng from './asset/noori-win-kor.png';
 import macpng from './asset/noori-mac-kor.png';
-import winapp from './asset/Netch.zip';
+import winapp from './asset/Netch182.zip';
+import macapp from './asset/V2rayU-stable.dmg';
+import andapp from './asset/v2rayNG-v1.5.11-arm64.apk';
 import Agreement from './Agreement';
 import './App.css';
 import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
@@ -18,7 +17,7 @@ function App() {
     <Router>
       <div className='App'>
         <header className='App-header'>
-          <img src={logo} className='App-logo' alt='logo' />
+          <img src={logo2} className='App-logo' alt='logo' />
             <Switch>
               <Route path='/androidlink'>
                 <Android />
@@ -86,7 +85,7 @@ function Home() {
         <br />
         일주일에 한번정도 업데이트하시면 더욱 원활하게 이용하실수 있습니다.
       </p>
-      <p>마지막 업데이트 : 2021년 3월 19일</p>
+      <p>마지막 업데이트 : 2021년 3월 19일 (다운로드 링크 해결)</p>
     </>
   );
 }
@@ -118,9 +117,9 @@ function Android() {
 
       <a
         className='App-link'
-        href='http://usvip2.vmess.red/files/v2rayNG-v1.5.11-arm64.apk'
-        target='_blank'
+        href={andapp}
         rel='noopener noreferrer'
+        download='v2rayNG-v1.5.11-arm64.apk'
       >
         1. 안드로이드 앱 다운로드 및 설치
       </a>
@@ -150,10 +149,14 @@ function Ios() {
         <br />
         아니요: 결제가능한 앱스토어 한국계정이 있습니까?(또는 미국,홍콩 등)
         <br />
-        네: 한국계정에서 앱 구입 및 다운로드 후 2번으로 이동
+        네: 한국계정에서 어플 구입 및 다운로드 후 2번으로 이동
         <br />
-        아니요: 관리자에게 앱 다운방법 문의
+        아니요: 관리자에게 어플 다운방법 문의
       </p>
+      <p>짝퉁어플 주의!! </p>
+      <img src={fakeapp} className='App-img' alt='logo' />
+      <p>중국앱스토어에 나오는 짝퉁 어플 입니다. 불꽃부분이 조금 다릅니다.</p>
+
       <p>2. 구독주소(URL) 복사 준비</p>
       <a
         className='App-link'
@@ -175,38 +178,11 @@ function Windows() {
       <p></p>
       <a
         className='App-link'
-        href='http://usvip2.vmess.red/files/Netch-check.zip'
-        target='_blank'
-        rel='noopener noreferrer'
-        downloads
-      >
-        1. 윈도우용 프로그램 다운로드1 (우클릭 새탭에서 열기)
-      </a>
-      <a
-        className='App-link'
-        href='https://usvip2.vmess.red/files/Netch-check.zip'
-        target='_blank'
-        rel='noopener noreferrer'
-        downloads
-      >
-        1. 윈도우용 프로그램 다운로드1-1 (우클릭 새탭에서 열기)https
-      </a>
-
-      <a
-        className='App-link'
-        href='https://ss.noori2020.com/owg'
-        rel='noopener noreferrer'
-        downloads
-      >
-        1. 윈도우용 프로그램 다운로드2 (위에 링크로 다운 안될시) link2
-      </a>
-      <a
-        className='App-link'
         href={winapp}
         rel='noopener noreferrer'
-        downloads
+        download='Netch.zip'
       >
-        1. 윈도우용 프로그램 다운로드3 (위에 링크로 다운 안될시) link3
+        1. 윈도우용 프로그램 다운로드
       </a>
       <p>2. 구독주소(URL) 복사 준비</p>
       <a
@@ -229,11 +205,11 @@ function Macosx() {
       <p></p>
       <a
         className='App-link'
-        href='http://usvip2.vmess.red/files/V2rayU0old.dmg'
-        target='_blank'
+        href={macapp}
         rel='noopener noreferrer'
+        download='V2rayU.dmg'
       >
-        1. 맥북/아이맥용 프로그램 다운로드(우클릭 새탭에서 열기)
+        1. 맥북/아이맥용 프로그램 다운로드
       </a>
       <p>2. 구독주소(URL) 복사 준비</p>
       <a
@@ -242,7 +218,7 @@ function Macosx() {
         target='_blank'
         rel='noopener noreferrer'
       >
-        3. 설치메뉴얼 PDF 먼저 읽어보기
+        3. 맥 설치 메뉴얼 보기
       </a>
       <p>일주일에 한번정도 서버목록을 업데이트해주세요! (설치법 5번 참조)</p>
     </>
@@ -261,6 +237,7 @@ function Remote() {
         href='https://download.teamviewer.com/download/TeamViewerQS.dmg'
         target='_blank'
         rel='noopener noreferrer'
+        download
       >
         MAC버젼 TeamViewerQS.dmg (우클릭 새탭에서 열기)
       </a>
@@ -269,6 +246,7 @@ function Remote() {
         href='https://download.teamviewer.com/download/TeamViewerQS.exe'
         target='_blank'
         rel='noopener noreferrer'
+        download
       >
         WINDOW버젼 TeamViewerQS.exe (우클릭 새탭에서 열기)
       </a>
@@ -277,6 +255,32 @@ function Remote() {
         권한이 필요하지 않습니다 <br /> 간단하게 다운로드 및 더블클릭하여
         기술팀에게 제공된 ID와 비밀번호를 알려주세요.
       </p>
+      <p></p>
+      <p>다른 다운로드 링크</p>
+      <a
+        className='App-link'
+        href='https://ss.noori2020.com/winos'
+        rel='noopener noreferrer'
+        download
+      >
+        윈도우 다운로드2 
+      </a>
+      <a
+        className='App-link'
+        href='https://ss.noori2020.com/macos'
+        rel='noopener noreferrer'
+        download
+      >
+        맥 다운로드2 
+      </a>
+      <a
+        className='App-link'
+        href='https://ss.noori2020.com/andos'
+        rel='noopener noreferrer'
+        download
+      >
+        안드로이드 다운로드2 
+      </a>
     </>
   );
 }
