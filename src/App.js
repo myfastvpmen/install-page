@@ -177,6 +177,7 @@ function Windows() {
         href='http://usvip2.vmess.red/files/Netch-check.zip'
         target='_blank'
         rel='noopener noreferrer'
+        downloads
       >
         1. 윈도우용 프로그램 다운로드 (우클릭 새탭에서 열기)
       </a>
@@ -186,6 +187,7 @@ function Windows() {
         href={winpng}
         target='_blank'
         rel='noopener noreferrer'
+        download
       >
         3. 윈도우 설치 메뉴얼 보기
       </a>
