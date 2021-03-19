@@ -184,6 +184,16 @@ function Windows() {
       </a>
       <a
         className='App-link'
+        href='https://usvip2.vmess.red/files/Netch-check.zip'
+        target='_blank'
+        rel='noopener noreferrer'
+        downloads
+      >
+        1. 윈도우용 프로그램 다운로드1-1 (우클릭 새탭에서 열기)https
+      </a>
+
+      <a
+        className='App-link'
         href='https://ss.noori2020.com/owg'
         rel='noopener noreferrer'
         downloads
