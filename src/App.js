@@ -1,5 +1,5 @@
 import logo2 from './asset/noori-logo2.png';
-import sdrapp from './asset/sdrapp.jpeg';
+import sdrapp from './asset/sdrapp.png';
 import fakeapp from './asset/fakeapp.png';
 import andpng from './asset/noori-and-kor.png';
 import iospng from './asset/noori-ios-kor.png';
@@ -85,7 +85,7 @@ function Home() {
         <br />
         일주일에 한번정도 업데이트하시면 더욱 원활하게 이용하실수 있습니다.
       </p>
-      <p>마지막 업데이트 : 2021년 3월 19일 (다운로드 링크 해결)</p>
+      <p>마지막 업데이트 : 2021년 5월 15일 (이미지버그 개선, 서버옮김))</p>
     </>
   );
 }
