@@ -18,31 +18,31 @@ function App() {
       <div className='App'>
         <header className='App-header'>
           <img src={logo2} className='App-logo' alt='logo' />
-            <Switch>
-              <Route path='/androidlink'>
-                <Android />
-              </Route>
-              <Route path='/ioslink'>
-                <Ios />
-              </Route>
-              <Route path='/windowslink'>
-                <Windows />
-              </Route>
-              <Route path='/macosxlink'>
-                <Macosx />
-              </Route>
-              <Route path='/remote'>
-                <Remote />
-              </Route>
-              <Route path='/home'>
-                <Home />
-              </Route>
-              <Route path='/'>
-                <Home2 />
-              </Route>
-            </Switch>
-            <p> </p>
-            <p> </p>
+          <Switch>
+            <Route path='/androidlink'>
+              <Android />
+            </Route>
+            <Route path='/ioslink'>
+              <Ios />
+            </Route>
+            <Route path='/windowslink'>
+              <Windows />
+            </Route>
+            <Route path='/macosxlink'>
+              <Macosx />
+            </Route>
+            <Route path='/remote'>
+              <Remote />
+            </Route>
+            <Route path='/home'>
+              <Home />
+            </Route>
+            <Route path='/'>
+              <Home2 />
+            </Route>
+          </Switch>
+          <p> </p>
+          <p> </p>
         </header>
       </div>
     </Router>
@@ -115,12 +115,21 @@ function Android() {
       <Menu />
       <p></p>
 
-      <a
+      {/* <a
         className='App-link'
         href={andapp}
         rel='noopener noreferrer'
         target='_blank'
         download='v2rayNG-v1.5.11-arm64.apk'
+      >
+        1. 안드로이드 앱 다운로드 및 설치
+      </a> */}
+      <a
+        className='App-link'
+        href='https://ss.noori2020.com/andos'
+        rel='noopener noreferrer'
+        target='_blank'
+        download
       >
         1. 안드로이드 앱 다운로드 및 설치
       </a>
@@ -177,12 +186,21 @@ function Windows() {
     <>
       <Menu />
       <p></p>
-      <a
+      {/* <a
         className='App-link'
         href={winapp}
         rel='noopener noreferrer'
         target='_blank'
         download='Netch.zip'
+      >
+        1. 윈도우용 프로그램 다운로드
+      </a> */}
+      <a
+        className='App-link'
+        href='https://ss.noori2020.com/winos'
+        rel='noopener noreferrer'
+        target='_blank'
+        download
       >
         1. 윈도우용 프로그램 다운로드
       </a>
@@ -205,12 +223,21 @@ function Macosx() {
     <>
       <Menu />
       <p></p>
-      <a
+      {/* <a
         className='App-link'
         href={macapp}
         rel='noopener noreferrer'
         target='_blank'
         download='V2rayU.dmg'
+      >
+        1. 맥북/아이맥용 프로그램 다운로드
+      </a> */}
+      <a
+        className='App-link'
+        href='https://ss.noori2020.com/macos'
+        rel='noopener noreferrer'
+        target='_blank'
+        download
       >
         1. 맥북/아이맥용 프로그램 다운로드
       </a>
@@ -267,7 +294,7 @@ function Remote() {
         target='_blank'
         download
       >
-        윈도우 다운로드2 
+        윈도우 다운로드2
       </a>
       <a
         className='App-link'
@@ -276,7 +303,7 @@ function Remote() {
         target='_blank'
         download
       >
-        맥 다운로드2 
+        맥 다운로드2
       </a>
       <a
         className='App-link'
@@ -285,7 +312,7 @@ function Remote() {
         target='_blank'
         download
       >
-        안드로이드 다운로드2 
+        안드로이드 다운로드2
       </a>
     </>
   );
