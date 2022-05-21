@@ -1,13 +1,13 @@
 import logo2 from './asset/noori-logo2.png';
 import sdrapp from './asset/sdrapp.png';
 import fakeapp from './asset/fakeapp.png';
-import andpng from './asset/noori-and-kor.png';
-import iospng from './asset/noori-ios-kor.png';
+import andpng from './asset/anroid-new-install.pdf';
+import iospng from './asset/iso-new-install.pdf';
 import winpng from './asset/noori-win-kor.png';
 import macpng from './asset/noori-mac-kor.png';
-import winapp from './asset/Netch182.zip';
-import macapp from './asset/V2rayU-stable.dmg';
-import andapp from './asset/v2rayNG-v1.5.11-arm64.apk';
+// import winapp from './asset/Netch182.zip';
+// import macapp from './asset/V2rayU-stable.dmg';
+// import andapp from './asset/v2rayNG-v1.5.11-arm64.apk';
 import Agreement from './Agreement';
 import './App.css';
 import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
@@ -78,14 +78,11 @@ function Home() {
   return (
     <>
       <Menu />
-      <p>누리넷 설치 및 다운로드 센터에 오신것을 환영합니다.</p>
+      <h3>꼭 먼저 설명서를 읽어보세요~!</h3>
+      <p>사용할 기기를 위해서 선택하시면 됩니다.</p>
       <p>구독주소 URL을 받으신 후 설치를 진행하시기 바랍니다.</p>
-      <p>
-        설치메뉴얼에 보시면 구독주소로 서버 업데이트 하는법 포함되어 나옵니다.{' '}
-        <br />
-        일주일에 한번정도 업데이트하시면 더욱 원활하게 이용하실수 있습니다.
-      </p>
-      <p>마지막 업데이트 : 2021년 5월 15일 (이미지버그 개선, 서버옮김))</p>
+   
+      <p>마지막 업데이트 : 2022년 5월 10일 (이미지버그 개선, 서버옮김))</p>
     </>
   );
 }
