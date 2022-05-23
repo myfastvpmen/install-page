@@ -81,7 +81,7 @@ function Home() {
       <h3>꼭 먼저 설명서를 읽어보세요~!</h3>
       <p>사용할 기기를 위해서 선택하시면 됩니다.</p>
       <p>구독주소 URL을 받으신 후 설치를 진행하시기 바랍니다.</p>
-   
+
       <p>마지막 업데이트 : 2022년 5월 10일 (이미지버그 개선, 서버옮김)</p>
     </>
   );
@@ -201,6 +201,12 @@ function Windows() {
       >
         1. 윈도우용 프로그램 다운로드
       </a>
+      <p>
+        - 위험파일이라도 뜰수도 있으나, 정상이니, 계속 또는 확인을 눌러서 다운 받으시면 됩니다.
+      </p>
+      <p>
+        - 다운이 안되실 경우 우클릭 해서 새창으로 링크열기 시도.
+      </p>
       <p>2. 구독주소(URL) 복사 준비</p>
       <a
         className='App-link'
@@ -286,7 +292,7 @@ function Remote() {
       <p>다른 다운로드 링크</p>
       <a
         className='App-link'
-        href='https://ss.noori2020.com/winos'
+        href='https://usvip2.vmess.red/files/2022/Noori-Netch-Installer-192.exe'
         rel='noopener noreferrer'
         target='_blank'
         download
