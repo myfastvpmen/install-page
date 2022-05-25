@@ -3,7 +3,7 @@ import sdrapp from './asset/sdrapp.png';
 import fakeapp from './asset/fakeapp.png';
 import andpng from './asset/anroid-new-install.pdf';
 import iospng from './asset/iso-new-install.pdf';
-import winpng from './asset/noori-win-kor.png';
+import winpng from './asset/2020/Window-install.pdf';
 import macpng from './asset/noori-mac-kor.png';
 // import winapp from './asset/Netch182.zip';
 // import macapp from './asset/V2rayU-stable.dmg';
