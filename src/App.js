@@ -1,7 +1,7 @@
 import logo2 from './asset/noori-logo2.png';
 import sdrapp from './asset/sdrapp.png';
 import fakeapp from './asset/fakeapp.png';
-import andpng from './asset/anroid-new-install.pdf';
+import andpng from './asset/2022/android-install.pdf';
 import iospng from './asset/iso-new-install.pdf';
 import winpng from './asset/2020/Window-install.pdf';
 import macpng from './asset/noori-mac-kor.png';
@@ -82,7 +82,7 @@ function Home() {
       <p>사용할 기기를 위해서 선택하시면 됩니다.</p>
       <p>구독주소 URL을 받으신 후 설치를 진행하시기 바랍니다.</p>
 
-      <p>마지막 업데이트 : 2022년 5월 23일 (윈도우 프로그램 업데이트)</p>
+      <p>마지막 업데이트 : 2022년 6월 1일 (안드로이드 및 윈도우 프로그램 업데이트)</p>
     </>
   );
 }
